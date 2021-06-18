@@ -5,7 +5,7 @@ const app = express();
 
 app.use(bodyParser.urlencoded({entended: true}));
 
-app.get('/weather', function(req, res){
+app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
